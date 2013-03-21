@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Chat WebSocket</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/funciones.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <article>
+                <div class="tituloChat">
+                    <h1>Chat!</h1>
+                </div>
+                <div class="contenidoChat">
+                    <div class="users">
+                        <h2>Users!</h2>
+                        <textarea id="userField" readonly="true" rows="6" cols="20"></textarea>
+                    </div>
+                    <div class="chat">
+                        <h2>Conversation!</h2>
+                        <textarea id="chatlogField" readonly="true" rows="6" cols="50"></textarea>
+                    </div>                
+                </div>                
+            </article>
+            <article>
+                <div class="envioChat">
+                    <div id="nombreChat">
+                        <input id="nombre" value="" type="text" placeholder="Ingrese..."/></div>
+                    <div class="botones">
+                        <input id="join" value="Join" type="button" />
+                        <input id="chat" value="Chat" type="button" disabled="true" />                        
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div id="output">
+                </div>
+            </article>
+            <article>
+                <div id="salida">
+                    <p>No hay de que preocuparse</p>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
